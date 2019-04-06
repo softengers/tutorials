@@ -12,6 +12,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
+# pip install dask --upgrade to eliminate "AttributeError: module 'pandas.core.computation' has no attribute 'expressions'"
 
 BATCH_START = 0
 TIME_STEPS = 20
