@@ -7,6 +7,12 @@
 """
 Please note, this code is only for python 3+. If you are using python 2+, please modify the code accordingly.
 """
+
+'''
+AttributeError: ('The following error happened while compiling the node', InplaceDimShuffle{x,0}(<TensorType(float64, vector)>), '\n', "module 'numpy.core.multiarray' has no attribute '_get_ndarray_c_version'")
+pip install -U numpy==1.15.4 to elimate the abover errors
+'''
+
 from __future__ import print_function
 import theano
 import theano.tensor as T
