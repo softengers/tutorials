@@ -13,6 +13,10 @@ Thank you for supporting!
 # to try tensorflow, un-comment following two lines
 # import os
 # os.environ['KERAS_BACKEND']='tensorflow'
+
+import datetime
+starttime = datetime.datetime.now()
+
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 import matplotlib.pyplot as plt
@@ -69,4 +73,5 @@ for step in range(501):
 
 
 
-
+endtime = datetime.datetime.now()
+print("Runing %d Seconds" % (endtime - starttime).seconds)

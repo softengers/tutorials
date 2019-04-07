@@ -14,6 +14,9 @@ Thank you for supporting!
 # import os
 # os.environ['KERAS_BACKEND']='tensorflow'
 
+import datetime
+starttime = datetime.datetime.now()
+
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.datasets import mnist
@@ -90,3 +93,5 @@ print('\ntest loss: ', loss)
 print('\ntest accuracy: ', accuracy)
 
 
+endtime = datetime.datetime.now()
+print("Runing %d Seconds" % (endtime - starttime).seconds)

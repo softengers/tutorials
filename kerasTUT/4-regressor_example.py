@@ -10,6 +10,10 @@ Thank you for supporting!
 
 # 4 - Regressor example
 
+import datetime
+starttime = datetime.datetime.now()
+
+
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.models import Sequential
@@ -54,3 +58,6 @@ Y_pred = model.predict(X_test)
 plt.scatter(X_test, Y_test)
 plt.plot(X_test, Y_pred)
 plt.show()
+
+endtime = datetime.datetime.now()
+print("Runing %d Seconds" % (endtime - starttime).seconds)

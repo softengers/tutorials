@@ -10,6 +10,9 @@ Thank you for supporting!
 
 # 5 - Classifier example
 
+import datetime
+starttime = datetime.datetime.now()
+
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.datasets import mnist
@@ -56,3 +59,5 @@ print('test loss: ', loss)
 print('test accuracy: ', accuracy)
 
 
+endtime = datetime.datetime.now()
+print("Runing %d Seconds" % (endtime - starttime).seconds)
